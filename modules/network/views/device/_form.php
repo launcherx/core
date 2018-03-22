@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Devices'), 'url' => 
 $this->params['breadcrumbs'][] = ['label' => $page_name];
 
 // Because firefox has 9 years of open bug with unsupported 'background-attachment: local' for textareas
-$this->registerJsFile('/js/plugins/autosize.min.js', ['depends' => \app\assets\AlphaAsset::className()]);
+$this->registerJsFile('/js/plugins/autosize.min.js', ['depends' => \app\assets\AlphaAsset::class]);
 
 $this->registerJs(/** @lang JavaScript */
     "
@@ -266,7 +266,7 @@ $this->registerJs(/** @lang JavaScript */
 
 <!-- Form modal -->
 <div id="form_modal" class="modal fade">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
